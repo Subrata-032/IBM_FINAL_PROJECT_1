@@ -26,7 +26,7 @@ document.getElementById('registerForm')?.addEventListener('submit', async (e) =>
         }).showToast();
   
         setTimeout(() => {
-            window.location.href = "index.htm";
+            window.location.href = "index.html";
         }, 3000);
     } else {
         Toastify({
@@ -71,7 +71,7 @@ document.getElementById('loginForm')?.addEventListener('submit', async (e) => {
         }).showToast();
   
         setTimeout(() => {
-            window.location.href = 'dashboard.htm';
+            window.location.href = 'dashboard.html';
         }, 3000);
     } else {
         Toastify({
@@ -135,7 +135,7 @@ function displayMovies(products) {
         productBox.onclick=()=>{
             localStorage.setItem("videoData", JSON.stringify(product.videolink));
 
-            window.location.href = "video.htm"
+            window.location.href = "video.html"
         }
 
         productBox.append(img);
