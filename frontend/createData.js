@@ -8,7 +8,7 @@ button.addEventListener("click", async()=>{
         image,videolink
     }
     console.log(obj);
-    const response = await fetch("https://ibm-final-project-1.onrender.com/api/create-product", {
+    const response = await fetch("https://ibm-final-project-1-1.onrender.com/api/create-product", {
         method:"POST",
         headers:{
             "Content-Type": "application/json"

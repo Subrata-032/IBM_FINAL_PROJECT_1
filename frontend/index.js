@@ -4,7 +4,7 @@ document.getElementById('registerForm')?.addEventListener('submit', async (e) =>
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    const res = await fetch('https://ibm-final-project-1.onrender.com/api/auth/register', {
+    const res = await fetch('https://ibm-final-project-1-1.onrender.com/api/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password })
@@ -45,7 +45,7 @@ document.getElementById('loginForm')?.addEventListener('submit', async (e) => {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    const res = await fetch('https://ibm-final-project-1.onrender.com/api/auth/login', {
+    const res = await fetch('https://ibm-final-project-1-1.onrender.com/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
@@ -93,7 +93,7 @@ let currentPage = 1;
 
 async function fetchProducts() {
     try {
-        const response = await fetch(`https://ibm-final-project-1.onrender.com/api/products?page=${currentPage}`,{
+        const response = await fetch(`https://ibm-final-project-1-1.onrender.com/api/products?page=${currentPage}`,{
             method:"GET"
         });
         const data = await response.json();
