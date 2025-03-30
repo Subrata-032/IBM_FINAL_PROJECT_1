@@ -26,7 +26,7 @@ document.getElementById('registerForm')?.addEventListener('submit', async (e) =>
         }).showToast();
   
         setTimeout(() => {
-            window.location.href = "home.htm";
+            window.location.href = "index.htm";
         }, 3000);
     } else {
         Toastify({
